@@ -1,0 +1,25 @@
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem; /* Adjust the gap between cards */
+  }
+  
+  .cool {
+   /* Adjust for 3 cards per row with margins */
+    box-sizing: border-box;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .cool {
+      flex: 1 1 calc(50% - 2rem); /* 2 cards per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cool {
+      flex: 1 1 calc(100% - 2rem); /* 1 card per row on small screens */
+    }
+  }
+  
